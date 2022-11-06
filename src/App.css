@@ -1,38 +1,50 @@
-.App {
+.home-background {
+  background-image: url("./assets/home-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.navbar-custom {
+  margin-left: 26rem;
+}
+.navbar {
+  background-color: #06b3bc;
+}
+.heading {
+  color: #b2b2b2;
+  top: 10rem;
+}
+.search-bar {
+  width: 30rem;
+  top: 13rem;
+  margin: 0 auto;
+  position: relative;
+}
+.profile-img {
+  border-radius: 500px;
+  height: 9rem;
+  width: 9rem;
+  margin: 0 auto;
+  display: block;
+}
+.heading-text {
+  color: #b2b2b2;
+  width: 70%;
+  margin: 5% auto;
   text-align: center;
+  font-size: 0.5rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-card {
+  line-height: 1.5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-page {
+  color: #3c4048;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  background-color: #eaeaea;
 }
