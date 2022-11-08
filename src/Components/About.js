@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 
 export default function About() {
   return (
     <div className="about-page">
-      <div className="home-background"></div>
-      <Navbar />
       <div className="card w-50 m-auto mt-5">
         <div className="card-header">About</div>
         <div className="card-body">

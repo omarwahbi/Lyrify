@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
-import Navbar from "./Navbar";
+
 import Search from "./Search";
 
 export default function Home(props) {
@@ -14,7 +14,7 @@ export default function Home(props) {
       setSearchValue(event.target.value);
     }
   };
-  let url = `https://api.happi.dev/v1/music?q=${searchValue}`;
+  let url = `https://api.happi.dev/v1/music?q=${searchValue}&limit=12&lyrics=true`;
   useEffect(() => {
     if (searchValue === "") {
       return;
@@ -36,6 +36,7 @@ export default function Home(props) {
           console.log(err);
         });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue]);
 
   if (isLoading) {
@@ -44,11 +45,12 @@ export default function Home(props) {
     return (
       <div className="App">
         <div className="home-background"></div>
-        <Navbar />
+
         <h1 className="position-absolute start-50 heading translate-middle">
           Lyric search could not be <strong>EASIER!</strong>
         </h1>
         <Search keyDown={handleKeyDown} />
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
 
 export default function Contact() {
   return (
     <div>
-      <div className="home-background"></div>
-      <Navbar />
       <div class="card w-50 m-auto mt-5">
         <div className="card-header">
           <h4 class="card-title">Contact ME</h4>
@@ -16,14 +13,10 @@ export default function Contact() {
             website? <br /> contact me on:
           </h6>
           <span> Phone Num: </span>
-          <a href="#" className="card-link pt-2 mb-5">
-            07814241356
-          </a>
+          <a className="card-link pt-2 mb-5">07814241356</a>
           <br />
           <span>E-mail: </span>
-          <a href="#" className="card-link pt-2 mb-5">
-            Owahbi85@gmail.com
-          </a>
+          <a className="card-link pt-2 mb-5">Owahbi85@gmail.com</a>
         </div>
       </div>
     </div>
