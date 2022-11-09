@@ -1,9 +1,9 @@
 import React from "react";
-
+import LoadingLogo from "../assets/loading.png";
 export default function Loading() {
   return (
     <div>
-      <h1>Loading</h1>
+      <img className="loadingLogo" src={LoadingLogo} />
     </div>
   );
 }

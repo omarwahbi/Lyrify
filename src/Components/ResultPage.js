@@ -26,7 +26,16 @@ export default function ResultPage(props) {
         console.log(err);
       });
   };
-  return (
+  function noResult() {
+    return (
+      <div>
+        <h1 className="no-result">Nothing can be found</h1>
+      </div>
+    );
+  }
+  return props.data.length <= 0 ? (
+    noResult()
+  ) : (
     <div>
       <div className="row row-cols-2 row-cols-md-6 m-auto g-4 container">
         <TrackCard data={props.data} track={trackData} />

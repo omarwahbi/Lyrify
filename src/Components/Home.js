@@ -43,10 +43,9 @@ export default function Home(props) {
     return <Loading />;
   } else {
     return (
-      <div className="App">
+      <div>
         <div className="home-background"></div>
-
-        <h1 className="position-absolute start-50 heading translate-middle">
+        <h1 className="heading ">
           Lyric search could not be <strong>EASIER!</strong>
         </h1>
         <Search keyDown={handleKeyDown} />

@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import ResultPage from "./Components/ResultPage";
 import SongLyrics from "./Components/SongLyrics";
+import Footer from "./Components/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,7 +24,9 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="home-background"></div>
+      <div className="container">
+        <div className="home-background"></div>
+      </div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home data={handleData} />} />
@@ -38,6 +41,7 @@ function App() {
           element={<SongLyrics trackData={trackData} cover={trackCover} />}
         />
       </Routes>
+      {/* <Footer /> */}
     </div>
   );
 }
