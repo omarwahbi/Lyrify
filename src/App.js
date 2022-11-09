@@ -18,6 +18,7 @@ function App() {
   function handleTrackData(trackData, trackCover) {
     setTrackData(trackData);
     setTrackCover(trackCover);
+    // eslint-disable-next-line no-sequences
     return trackData, trackCover;
   }
   return (
