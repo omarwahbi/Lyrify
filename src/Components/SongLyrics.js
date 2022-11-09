@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function SongLyrics(props) {
   const [lyrics, setLyrics] = useState();
-  console.log(props.trackData.api_lyrics);
+
   fetch(props.trackData.api_lyrics, {
     headers: {
       "x-happi-key": "b74680hnKpCjizznI3vzGzQyUD4gS8clkWjTGgQVGUp8daEi4uxFlKzs",
@@ -10,7 +10,6 @@ export default function SongLyrics(props) {
   })
     .then((response) => response.json())
     .then((response) => {
-      console.log(response.result.lyrics);
       setLyrics(response.result.lyrics);
     })
 

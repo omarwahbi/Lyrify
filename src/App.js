@@ -7,8 +7,6 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import ResultPage from "./Components/ResultPage";
 import SongLyrics from "./Components/SongLyrics";
-import Footer from "./Components/Footer";
-
 function App() {
   const [data, setData] = useState([]);
   const [trackData, setTrackData] = useState([]);
