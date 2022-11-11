@@ -42,9 +42,10 @@ export default function ResultPage(props) {
       </div>
     );
   }
-  return searchResult === undefined ? (
+
+  return !searchResult ? (
     <Loading />
-  ) : searchResult <= 0 ? (
+  ) : searchResult?.length <= 0 ? (
     noResult()
   ) : (
     <div>

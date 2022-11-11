@@ -1,10 +1,10 @@
 import React from "react";
-import BrandLogo from "../assets/Brand.svg";
+import BrandLogo from "../../../assets/Brand.svg";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="w-100">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">

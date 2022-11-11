@@ -40,6 +40,7 @@ export default function SongLyrics(props) {
         console.log(err);
       });
   }, [id_artist, id_album, id_track]);
+
   return trackData === undefined ? (
     <Loading />
   ) : (

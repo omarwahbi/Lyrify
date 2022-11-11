@@ -5,7 +5,8 @@ export default function TrackCard(props) {
   const sendData = (data) => {
     props.trackCover(data.cover);
   };
-  const cards = props.data.map((val, i) => {
+
+  return props.data.map((val, i) => {
     return (
       <div className="col" key={i}>
         <Link
@@ -23,6 +24,5 @@ export default function TrackCard(props) {
       </div>
     );
   });
-  return cards;
 }
 // style={{ height: "12rem" }}
